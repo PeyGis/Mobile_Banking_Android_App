@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_select_merchant"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.pagescoffie.nwallet.SelectMerchantActivity">
+
+    <include
+        layout="@layout/nav_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <android.support.v7.widget.SearchView
+        android:layout_width="match_parent"
+        android:queryHint="Search Here"
+        android:theme="@style/TextInputLayoutHintText"
+        android:background="@color/colorBackground"
+        android:id="@+id/search_bar"
+        android:iconifiedByDefault="false"
+        android:layout_height="wrap_content"/>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/merchant_swipe_container"
+        >
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/merchant_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+</LinearLayout>

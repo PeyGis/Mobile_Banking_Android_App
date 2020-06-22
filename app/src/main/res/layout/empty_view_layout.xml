@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/empty_view_holder"
+    android:gravity="center">
+
+    <ImageView
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+        android:id="@+id/empty_image"
+    android:src="@drawable/wallet"
+        android:layout_margin="@dimen/activity_horizontal_margin"/>
+    <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+        android:id="@+id/empty_text"
+    android:text="Sorry No Account Synced Yet. Click to Sync Now"
+    android:layout_marginTop="10dp"
+    android:textAlignment="center"
+    android:textSize="16sp"
+    android:textColor="@color/colorPrimaryDark"/>
+
+</LinearLayout>

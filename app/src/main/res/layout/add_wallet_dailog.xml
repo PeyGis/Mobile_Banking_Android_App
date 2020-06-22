@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/activity_horizontal_margin"
+            android:text="Add Wallet"
+            android:textAlignment="center"
+            android:background="@color/colorPrimaryDark"
+            android:textColor="@color/colorWhite"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"/>
+
+        <TextView
+            android:padding="@dimen/activity_horizontal_margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:text="Select Network"
+            android:textColor="@color/colorPrimaryDark"/>
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/networkspinner"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:padding="@dimen/activity_horizontal_margin"
+            android:popupBackground="@color/colorBackground"
+            android:background="@drawable/spinner_new"
+            android:spinnerMode="dialog" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:padding="@dimen/activity_horizontal_margin"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            app:hintTextAppearance="@style/TextInputLayoutHintText"
+            android:textColorHint="@color/colorPrimaryDark"
+            android:id="@+id/momoNumberWrapper">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/momoNumber"
+                android:inputType="number"
+                android:hint="Enter MOMO Number"
+                android:backgroundTint="@color/colorBackgroundDark"
+                android:textColor="@color/colorBlack"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="SAVE"
+            android:id="@+id/addWalletBtn"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="70dp"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/dashboard_buttons"/>
+
+    </LinearLayout>
+
+
+
+</ScrollView>

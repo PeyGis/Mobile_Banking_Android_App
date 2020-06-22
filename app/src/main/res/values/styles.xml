@@ -1,0 +1,51 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorControlNormal">@color/colorBackground</item>
+    </style>
+
+    <style name="TextInputLayoutHintText">
+        <!-- Customize your theme here. -->
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:textSize">14sp</item>
+        <item name="colorAccent">@color/colorAccent1</item>
+        <item name="colorControlNormal">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="CustomeStyle">
+        <!-- Customize your theme here. -->
+        <item name="android:textColor">@color/colorAccent1</item>
+        <item name="android:textSize">14sp</item>
+        <item name="colorAccent">@color/colorPrimaryDark2</item>
+        <item name="colorControlNormal">@color/colorPrimaryDark</item>
+    </style>
+
+
+    <style name="radioGroupStyle">
+        <!-- Customize your theme here. -->
+        <item name="colorAccent">@color/colorAccent1</item>
+        <item name="colorControlNormal">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="TextInputLayoutLogin">
+        <!-- Customize your theme here. -->
+        <item name="android:textColor">@color/colorBackgroundDark</item>
+        <item name="android:textSize">12dp</item>
+    </style>
+
+    <style name="MyMaterialTheme" parent="MyMaterialTheme.Base">
+    </style>
+
+    <style name="MyMaterialTheme.Base" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+</resources>

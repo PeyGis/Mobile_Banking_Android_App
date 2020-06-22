@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_payment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.pagescoffie.nwallet.PaymentActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <include layout="@layout/nav_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:padding="@dimen/activity_horizontal_margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Merchant Name"
+            android:textAlignment="center"
+            android:textColor="@color/colorBlack"
+            android:id="@+id/merchantNameTv"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:padding="@dimen/activity_horizontal_margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select Account"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_marginTop="10dp"/>
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/myAccoountPaymentSpinner"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:padding="@dimen/activity_horizontal_margin"
+            android:popupBackground="@color/colorBackground"
+            android:background="@drawable/spinner_new"
+            android:spinnerMode="dialog" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            app:hintTextAppearance="@style/TextInputLayoutHintText"
+            android:textColorHint="@color/colorPrimaryDark"
+            android:id="@+id/merchantAccountNumberWrapper">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:hint="Account Number"
+                android:backgroundTint="@color/colorBackgroundDark"
+                android:textColor="@color/colorBlack"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            app:hintTextAppearance="@style/TextInputLayoutHintText"
+            android:textColorHint="@color/colorPrimaryDark"
+            android:id="@+id/transferAmountWrapper">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:hint="Amount"
+                android:text="0.00"
+                android:backgroundTint="@color/colorBackgroundDark"
+                android:textColor="@color/colorBackgroundDark"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="PAY"
+            android:id="@+id/payMerchantBtn"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/dashboard_buttons"/>
+
+    </LinearLayout>
+
+</ScrollView>

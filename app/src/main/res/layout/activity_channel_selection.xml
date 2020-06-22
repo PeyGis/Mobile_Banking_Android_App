@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_channel_selection"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+android:background="@color/colorWhite"
+    tools:context="com.example.pagescoffie.nwallet.ChannelSelectionActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include layout="@layout/nav_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:textColor="@color/colorBlack"
+            android:textAlignment="center"
+            android:layout_marginStart="@dimen/activity_vertical_margin"
+            android:layout_marginEnd="@dimen/activity_vertical_margin"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:text="Securely transfer funds between your account and wallet"/>
+
+        <LinearLayout
+            android:id="@+id/accountToAccountBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:weightSum="4"
+            android:background="@drawable/spinner_border"
+            android:padding="@dimen/activity_vertical_margin">
+            <ImageView
+                android:layout_weight="1"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/bank"/>
+            <TextView
+                android:layout_weight="2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:layout_marginTop="5dp"
+                android:text="Account to Account"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+            <ImageView
+                android:layout_weight="1"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/bank"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/walletToAccountBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/spinner_border"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:padding="@dimen/activity_vertical_margin"
+            android:weightSum="4">
+            <ImageView
+                android:layout_weight="1"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/wallet"/>
+
+            <TextView
+                android:layout_weight="2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:layout_marginTop="5dp"
+                android:text="Wallet to Account"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+            <ImageView
+                android:layout_weight="1"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/bank"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/accountToWalletBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/spinner_border"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:padding="@dimen/activity_vertical_margin"
+            android:weightSum="4">
+
+            <ImageView
+                android:layout_weight="1"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/bank"/>
+            <TextView
+                android:layout_weight="2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:layout_marginTop="5dp"
+                android:text="Account to Wallet"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+            <ImageView
+                android:layout_weight="1"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/wallet"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

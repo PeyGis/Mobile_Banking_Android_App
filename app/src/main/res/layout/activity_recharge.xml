@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_recharge"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.pagescoffie.nwallet.RechargeActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <include layout="@layout/nav_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:padding="@dimen/activity_horizontal_margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select Recharge Option"
+            android:layout_marginTop="40dp"
+            android:textColor="@color/colorPrimaryDark"/>
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rechargeOptionSpinner"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:padding="@dimen/activity_horizontal_margin"
+            android:popupBackground="@color/colorBackground"
+            android:background="@drawable/spinner_new"
+            android:spinnerMode="dialog" />
+
+        <TextView
+            android:padding="@dimen/activity_horizontal_margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select Account"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_marginTop="10dp"/>
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rechageAccoountSpinner"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:padding="@dimen/activity_horizontal_margin"
+            android:popupBackground="@color/colorBackground"
+            android:background="@drawable/spinner_new"
+            android:spinnerMode="dialog" />
+
+        <RadioGroup
+            android:id="@+id/rechargeRadio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/myContactRadio"
+                android:textColor="@color/colorPrimaryDark"
+                android:buttonTint="@color/colorPrimaryDark"
+                android:checked="true"
+                android:text="My contact"/>
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/otherContactRadio"
+                android:textColor="@color/colorPrimaryDark"
+                android:buttonTint="@color/colorPrimaryDark"
+                android:text="Other contact"/>
+        </RadioGroup>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            app:hintTextAppearance="@style/TextInputLayoutHintText"
+            android:textColorHint="@color/colorPrimaryDark"
+            android:id="@+id/rechargeContactWrapper">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:hint="Number"
+                android:backgroundTint="@color/colorBackgroundDark"
+                android:textColor="@color/colorBackgroundDark"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            app:hintTextAppearance="@style/TextInputLayoutHintText"
+            android:textColorHint="@color/colorPrimaryDark"
+            android:id="@+id/rechargeAmountWrapper">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:hint="Amount"
+                android:text="0.00"
+                android:backgroundTint="@color/colorBackgroundDark"
+                android:textColor="@color/colorBackgroundDark"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Recharge"
+            android:id="@+id/rechargeAirtimeBtn"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/dashboard_buttons"/>
+
+    </LinearLayout>
+
+</ScrollView>

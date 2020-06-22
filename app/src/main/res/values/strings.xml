@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Nwallet</string>
+    <string name="home_toolbar_title">Home</string>
+    <string name="funds_transfer_toolbar_title">FT Account</string>
+    <string name="my_account_toolbar_title">My Account</string>
+    <string name="my_wallet_toolbar_title">Wallet</string>
+    <string name="channel_selection_toolbar_title">Channel</string>
+    <string name="recharge_toolbar_title">Recharge</string>
+    <string name="merchants_toolbar_title">Merchant</string>
+    <string name="payment_toolbar_title">Pay Merchant</string>
+    <string name="services_toolbar_title">Services</string>
+    <string name="chart_toolbar_title">Chart</string>
+    <string name="settings_toolbar_title">Settings</string>
+    <string name="changePIN_toolbar_title">Change PIN</string>
+    <string name="change_phone_toolbar_title">Change Contact</string>
+
+
+    <string-array name="user_channels">
+        <item>Channel 1</item>
+        <item>Channel 2</item>
+        <item>Channel 3</item>
+        <item>Channel 4</item>
+        <item>Channel 5</item>
+        <item>Channel 6</item>
+        <item>Channel 7</item>
+        <item>Channel 8</item>
+        <item>Channel 9</item>
+        <item>Channel 10</item>
+    </string-array>
+    <string name="title_activity_atmlocator">ATM Locator</string>
+
+</resources>

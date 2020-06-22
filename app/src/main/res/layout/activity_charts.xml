@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_charts"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    tools:context="com.example.pagescoffie.nwallet.ChartsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <include layout="@layout/nav_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:padding="@dimen/activity_horizontal_margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select Account"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/myAccoountTransferSpinner"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:padding="@dimen/activity_horizontal_margin"
+            android:background="@drawable/spinner_new"
+            android:spinnerMode="dialog" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_margin="@dimen/activity_vertical_margin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Start Date"
+                android:id="@+id/startDateTv"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorPrimary"
+                android:id="@+id/startDateImg"
+                android:src="@android:drawable/ic_menu_my_calendar"
+                />
+            <TextView
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:layout_marginEnd="@dimen/activity_vertical_margin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="End Date"
+                android:layout_marginStart="100dp"
+                android:id="@+id/endDateTv"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorPrimary"
+                android:id="@+id/endDateImg"
+                android:src="@android:drawable/ic_menu_my_calendar"/>
+
+        </LinearLayout>
+        
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Update Chart"
+            android:id="@+id/updateChart"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:padding="@dimen/activity_vertical_margin"
+            android:background="@drawable/spinner_border"/>
+
+        <com.github.mikephil.charting.charts.PieChart
+            android:layout_width="match_parent"
+            android:layout_margin="@dimen/activity_vertical_margin"
+            android:id="@+id/pie_chart"
+            android:layout_height="350dp"/>
+    </LinearLayout>
+
+</ScrollView>
